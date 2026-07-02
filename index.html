@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sami Ullah | IT Support & Cyber Security Specialist Portfolio</title>
+    <meta name="description" content="Welcome to the portfolio of Sami Ullah, an IT Support Officer and Cyber Security graduate specializing in end-user support, system administration, and security risk auditing.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Custom Halo Cursor -->
+    <div class="cursor-dot" id="custom-cursor-dot"></div>
+    <div class="cursor-outline" id="custom-cursor-outline"></div>
+
+    <!-- Glowing Background Shapes -->
+    <div class="bg-glows">
+        <div class="glow-orb glow-1" id="glow-orb-1"></div>
+        <div class="glow-orb glow-2" id="glow-orb-2"></div>
+        <div class="glow-orb glow-3" id="glow-orb-3"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="navbar-header" id="main-header">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" id="logo-link">
+                Sami<span>.</span>
+            </a>
+            
+            <!-- Desktop Navigation Menu -->
+            <nav class="nav-menu-desktop" aria-label="Desktop navigation">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Action Controls -->
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-icon" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-sun" id="theme-icon-sun"></i>
+                    <i class="fa-solid fa-moon" id="theme-icon-moon"></i>
+                </button>
+                <a href="#contact" class="btn-primary btn-nav-cta" id="nav-cta-btn">Let's Connect</a>
+                
+                <!-- Hamburger Button for Mobile -->
+                <button class="hamburger-btn" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu-drawer" id="mobile-menu" aria-hidden="true">
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-drawer-footer">
+            <a href="mailto:Samiullah2708@gmail.com" class="drawer-email">Samiullah2708@gmail.com</a>
+            <div class="social-icons">
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sami-ullah-275625181" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Container -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section section-reveal">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-accent glow-text-accent">Available for Opportunities</div>
+                    <h1 class="hero-title">
+                        Sami Ullah <br>
+                        <span class="gradient-text">IT Support & Cyber</span> <br>
+                        Security.
+                    </h1>
+                    <p class="hero-desc">
+                        IT Support and Cyber Security graduate with a Master of Cyber Security from Deakin University. Proficient in Microsoft 365, active directory systems, network troubleshooting, and security risk auditing.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="Sam_CV_2026_fixed.docx" download class="btn-primary hover-scale"><i class="fa-solid fa-file-arrow-down" style="margin-right: 8px;"></i> Download CV</a>
+                        <a href="#contact" class="btn-secondary hover-scale">Get in Touch</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-frame">
+                        <div class="avatar-backdrop"></div>
+                        
+                        <!-- Interactive 3D WebGL Canvas Container -->
+                        <div id="canvas-3d-container" class="canvas-3d-container"></div>
+                        
+                        <!-- Floating Glassmorphic Stats Info cards -->
+                        <div class="floating-glass-card card-experience hover-float" id="stat-card-exp">
+                            <div class="card-icon"><i class="fa-solid fa-user-shield"></i></div>
+                            <div class="card-text">
+                                <span class="card-num">M.Sc.</span>
+                                <span class="card-sub">Cyber Security</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-glass-card card-projects hover-float" id="stat-card-projects">
+                            <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <div class="card-text">
+                                <span class="card-num">Deakin</span>
+                                <span class="card-sub">IT Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator" id="scroll-prompt">
+                <span class="mouse-icon">
+                    <span class="mouse-wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Who I Am</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text-content">
+                        <h3>Dedicated to resolving hardware diagnostics and securing organizational assets.</h3>
+                        <p>
+                            I approach technical support and cyber operations with a analytical, problem-solving mindset. I enjoy troubleshooting complex connection errors, managing user identities, and automating setup operations.
+                        </p>
+                        <p>
+                            Whether configuring device images using PowerShell, managing incident logs in ServiceNow, or reviewing security risk compliance (ISO 27001), I aim for clean documentation and efficient service delivery.
+                        </p>
+                        <div class="about-details-list">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Geelong West, Victoria, 3218</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Samiullah2708@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills Showcase -->
+                    <div class="skills-showcase">
+                        <div class="skill-category">
+                            <h4 class="skill-cat-title">IT Support & Systems</h4>
+                            <div class="skills-list">
+                                <span class="skill-badge"><i class="fa-brands fa-windows"></i> Windows 10/11</span>
+                                <span class="skill-badge"><i class="fa-brands fa-apple"></i> macOS</span>
+                                <span class="skill-badge"><i class="fa-solid fa-cloud"></i> Microsoft 365 / Azure</span>
+                                <span class="skill-badge"><i class="fa-solid fa-sitemap"></i> Active Directory</span>
+                                <span class="skill-badge"><i class="fa-solid fa-folder-open"></i> SharePoint</span>
+                                <span class="skill-badge"><i class="fa-solid fa-headset"></i> ServiceNow ITSM</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4 class="skill-cat-title">Cyber Security</h4>
+                            <div class="skills-list">
+                                <span class="skill-badge"><i class="fa-solid fa-shield-halved"></i> ISO 27001 / ISMS</span>
+                                <span class="skill-badge"><i class="fa-solid fa-magnifying-glass-chart"></i> Splunk SIEM</span>
+                                <span class="skill-badge"><i class="fa-solid fa-key"></i> Keycloak IAM</span>
+                                <span class="skill-badge"><i class="fa-solid fa-bug"></i> Vulnerability Audit</span>
+                                <span class="skill-badge"><i class="fa-solid fa-user-lock"></i> Security Awareness</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4 class="skill-cat-title">Tools & Engineering</h4>
+                            <div class="skills-list">
+                                <span class="skill-badge"><i class="fa-solid fa-terminal"></i> PowerShell Scripts</span>
+                                <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                                <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                                <span class="skill-badge"><i class="fa-solid fa-code"></i> C# Programming</span>
+                                <span class="skill-badge"><i class="fa-solid fa-briefcase"></i> ITIL / IT Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Selected Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    
+                    <!-- Project 1 -->
+                    <article class="project-card" id="project-card-1">
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/project1.jpg" alt="Vulnerability and Security Risk Dashboard preview" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-overlay-links">
+                                    <a href="https://github.com" target="_blank" class="overlay-link-btn" aria-label="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Keycloak</span>
+                                <span class="tag">IAM</span>
+                                <span class="tag">GitHub</span>
+                            </div>
+                            <h3 class="project-title">Security Risk & IAM Integration</h3>
+                            <p class="project-description">
+                                Conducted vulnerability scans and risk audits across web platforms at Gopher Industries. Integrated robust Identity & Access Management (IAM) controls using Keycloak.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" id="project-card-2">
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/project2.jpg" alt="PowerShell scripting and laptop imaging telemetry preview" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-overlay-links">
+                                    <a href="https://github.com" target="_blank" class="overlay-link-btn" aria-label="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">PowerShell</span>
+                                <span class="tag">Active Directory</span>
+                                <span class="tag">Windows</span>
+                            </div>
+                            <h3 class="project-title">Automated Device Deployment</h3>
+                            <p class="project-description">
+                                Programmed PowerShell scripts to automate Deakin laptop imaging and secure configuration wipes. Managed and troubleshot remote authentication configurations.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" id="project-card-3">
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/project3.jpg" alt="Splunk SIEM network security logs preview" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-overlay-links">
+                                    <a href="https://github.com" target="_blank" class="overlay-link-btn" aria-label="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Splunk</span>
+                                <span class="tag">SIEM Monitoring</span>
+                                <span class="tag">ITIL</span>
+                            </div>
+                            <h3 class="project-title">SIEM Incident Log Audits</h3>
+                            <p class="project-description">
+                                Constructed search alerts and monitored real-time traffic logs using Splunk, implementing ISO 27001 controls for information tracking and audits.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="experience-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">My Journey</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-track"></div>
+
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item timeline-left" id="timeline-item-1">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel hover-float">
+                            <span class="timeline-date">May 2025 - Present</span>
+                            <h3 class="timeline-role">IT Support Officer (Casual)</h3>
+                            <h4 class="timeline-company">Deakin University, Geelong</h4>
+                            <p class="timeline-text">
+                                Troubleshoot Level 1 Wi-Fi, authentication, and M365 issues. Perform laptop imaging and diagnostics. Manage incident tickets and system escalations in ServiceNow.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item timeline-right" id="timeline-item-2">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel hover-float">
+                            <span class="timeline-date">Jan 2026 - Present</span>
+                            <h3 class="timeline-role">Online Data Analyst (Freelance)</h3>
+                            <h4 class="timeline-company">TELUS Digital AI Community</h4>
+                            <p class="timeline-text">
+                                Execute QA operations and text validation using TryRating tools. Perform audio evaluations to enhance overall system relevance and quality metrics by 80%.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item timeline-left" id="timeline-item-3">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel hover-float">
+                            <span class="timeline-date">Nov 2023 - June 2024</span>
+                            <h3 class="timeline-role">Project Member (Security Capstone)</h3>
+                            <h4 class="timeline-company">Gopher Industries</h4>
+                            <p class="timeline-text">
+                                Led risk profiling and security controls configuration. Implemented data protection measures and IAM practices using Keycloak. Maintained code reviews in GitHub.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item timeline-right" id="timeline-item-4">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel hover-float">
+                            <span class="timeline-date">Nov 2022 - Present</span>
+                            <h3 class="timeline-role">Console Operator & Barista</h3>
+                            <h4 class="timeline-company">APCO Service Stations</h4>
+                            <p class="timeline-text">
+                                Coordinate customer operations, handle point-of-sale (POS) terminals, and train incoming staff on transactional and technical workflows.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Credentials Section -->
+        <section id="education" class="education-section scroll-reveal" style="padding-top: 20px;">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Academic Credentials</span>
+                    <h2 class="section-title">Education & Certifications</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Academic Degrees -->
+                    <div class="glass-panel">
+                        <h3 style="margin-bottom: 20px; font-size: 1.4rem; color: var(--accent);"><i class="fa-solid fa-graduation-cap" style="margin-right: 10px;"></i> Degrees</h3>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <h4 style="font-size: 1.1rem; margin-bottom: 4px;">Master of Cyber Security</h4>
+                            <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Deakin University, Australia | 2022 – 2024</span>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 8px;">Awarded merit STEM scholarship. Specialized in network defense, information security risk management, and ISMS auditing.</p>
+                        </div>
+
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 4px;">B.Sc. in Electrical Engineering (Honours)</h4>
+                            <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">UET Taxila, Pakistan | 2017 – 2021</span>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 8px;">Completed with an 80% tuition merit scholarship. Active campus event supervisor and organizer.</p>
+                        </div>
+                    </div>
+
+                    <!-- Professional Certifications -->
+                    <div class="glass-panel">
+                        <h3 style="margin-bottom: 20px; font-size: 1.4rem; color: var(--accent);"><i class="fa-solid fa-certificate" style="margin-right: 10px;"></i> Professional Certifications</h3>
+                        <ul style="display: flex; flex-direction: column; gap: 14px;">
+                            <li style="display: flex; align-items: start; gap: 12px;">
+                                <i class="fa-solid fa-award" style="color: var(--accent-cyan); margin-top: 4px;"></i>
+                                <div>
+                                    <strong style="display: block; font-size: 0.95rem;">ISO/IEC 27001:2022 Lead Auditor (ISMS)</strong>
+                                    <span style="font-size: 0.8rem; color: var(--text-muted);">Udemy | May 2025</span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 12px;">
+                                <i class="fa-solid fa-award" style="color: var(--accent-cyan); margin-top: 4px;"></i>
+                                <div>
+                                    <strong style="display: block; font-size: 0.95rem;">IT Service Desk: Service Management</strong>
+                                    <span style="font-size: 0.8rem; color: var(--text-muted);">LinkedIn Learning | Dec 2025</span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 12px;">
+                                <i class="fa-solid fa-award" style="color: var(--accent-cyan); margin-top: 4px;"></i>
+                                <div>
+                                    <strong style="display: block; font-size: 0.95rem;">Datacom Cyber Security Simulation</strong>
+                                    <span style="font-size: 0.8rem; color: var(--text-muted);">Forage | Aug 2025</span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 12px;">
+                                <i class="fa-solid fa-award" style="color: var(--accent-cyan); margin-top: 4px;"></i>
+                                <div>
+                                    <strong style="display: block; font-size: 0.95rem;">Learning Splunk (SIEM Analytics)</strong>
+                                    <span style="font-size: 0.8rem; color: var(--text-muted);">LinkedIn Learning | Jan 2025</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Cards -->
+                    <div class="contact-info-cards">
+                        
+                        <div class="contact-card glass-panel hover-float" id="contact-info-email">
+                            <div class="contact-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email Me</span>
+                                <a href="mailto:Samiullah2708@gmail.com" class="contact-value">Samiullah2708@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glass-panel hover-float" id="contact-info-phone">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">Call Me</span>
+                                <a href="tel:+61426841037" class="contact-value">+61 426 841 037</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glass-panel hover-float" id="contact-info-location">
+                            <div class="contact-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Geelong West, VIC, Australia</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container glass-panel">
+                        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+                            <!-- Web3Forms API Access Key -->
+                            <input type="hidden" name="access_key" value="d84f666d-a356-4983-89f9-dee55cfbdd7d">
+                            <!-- Optional Customizations for Web3Forms -->
+                            <input type="hidden" name="from_name" value="Sami's Portfolio Contact">
+                            <input type="hidden" name="subject" value="New Contact Inquiry from Sami's Portfolio">
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="form-name" name="name" required placeholder=" " class="form-input">
+                                    <label for="form-name" class="form-label">Full Name</label>
+                                    <span class="form-error-msg" id="name-error">Name is required</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="form-email" name="email" required placeholder=" " class="form-input">
+                                    <label for="form-email" class="form-label">Email Address</label>
+                                    <span class="form-error-msg" id="email-error">Please enter a valid email</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="form-subject" name="custom_subject" required placeholder=" " class="form-input">
+                                <label for="form-subject" class="form-label">Subject</label>
+                                <span class="form-error-msg" id="subject-error">Subject is required</span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="form-message" name="message" required placeholder=" " rows="5" class="form-input"></textarea>
+                                <label for="form-message" class="form-label">Your Message</label>
+                                <span class="form-error-msg" id="message-error">Message cannot be empty</span>
+                            </div>
+                            <button type="submit" class="btn-primary btn-submit hover-scale" id="form-submit-btn">
+                                Send Message <i class="fa-solid fa-paper-plane button-arrow"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="footer-logo">Sami<span>.</span></a>
+                <p class="footer-tagline">Providing secure infrastructure, proactive IT support, and seamless systems operations.</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-col">
+                    <span class="footer-col-title">Navigation</span>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <span class="footer-col-title">Socials</span>
+                    <ul>
+                        <li><a href="https://github.com" target="_blank"><i class="fa-brands fa-github footer-icon"></i> GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/sami-ullah-275625181" target="_blank"><i class="fa-brands fa-linkedin footer-icon"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p class="copyright-text">&copy; 2026 Sami Ullah. All rights reserved.</p>
+                <a href="#hero" class="btn-back-to-top" id="top-scroll-btn"><i class="fa-solid fa-arrow-up"></i> Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notifications Container -->
+    <div class="toast-container" id="toast-notif-container" aria-live="polite"></div>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Three.js Visualizer Scene -->
+    <script src="three-scene.js"></script>
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
